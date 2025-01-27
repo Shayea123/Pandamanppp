@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Pandaman Token (PPP) - The meme coin taking over the Sui network!">
+    <title>Pandaman (PPP) - The Ultimate Meme Coin</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Shayea123/Pandaman/f257bc966011ca018b644df8c05c06e7dd87ebc6/Pandaman.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <style>
+        .chinese-font {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        .dragon-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><text x="0" y="50" font-family="Ma Shan Zheng" font-size="40" fill="rgba(255,255,255,0.1)">龍</text></svg>');
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-red-900 via-yellow-600 to-red-900 min-h-screen">
+    <header class="dragon-bg bg-opacity-20 py-6 shadow-xl">
+        <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
+            🐼 潘達人 🐼
+            <br>
+            <span class="text-xl md:text-3xl font-sans">Pandaman Token (PPP)</span>
+        </h1>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white/90 rounded-2xl shadow-2xl p-6 backdrop-blur-sm">
+            <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/f257bc966011ca018b644df8c05c06e7dd87ebc6/Pandaman.png" 
+                 alt="Pandaman Logo" 
+                 class="floating w-48 mx-auto mb-8">
+
+            <div class="space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 chinese-font">
+                    加密貨幣之王
+                </h2>
+                <p class="text-gray-700 text-lg">
+                    The meme coin bringing prosperity to the Sui network! 福
+                </p>
+
+                <div class="bg-yellow-100 p-4 rounded-lg border-2 border-red-500">
+                    <div class="flex flex-col space-y-3">
+                        <p id="contractAddress" class="text-xs sm:text-sm font-mono break-words overflow-x-auto">
+                            0xde403ead954168d8236df0a58db7b6b9971182b2aa3baa35d8837ca9fd50b7d4::ppp::PPP
+                        </p>
+                        <div class="flex items-center justify-center space-x-2">
+                            <button onclick="copyAddress()" class="p-2 hover:bg-yellow-200 rounded-lg transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                                    <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                                </svg>
+                            </button>
+                            <span id="copyFeedback" class="text-green-600 text-sm hidden">Copied!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://turbos.finance" 
+                   class="inline-block bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg">
+                    🎋 立即購買 Buy Now
+                </a>
+                
+                <div class="mt-8 p-6 bg-white/80 rounded-xl border-2 border-dashed border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white">🔥</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-red-600 chinese-font">購買指南 | Buying Adventure</h3>
+                    </div>
+                
+                    <div class="space-y-4 text-left">
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">①</span>
+                            <p>Visit <a href="https://turbos.finance" class="text-red-600 underline hover:text-red-800">Turbos.Finance</a> 
+                            <br><span class="text-sm opacity-75">(Desktop recommended for best experience)</span></p>
+                        </div>
+                
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">②</span>
+                            <p>Click the <span class="bg-red-100 px-2 py-1 rounded">🚀 Launch dApp</span> button<br>
+                            <span class="text-sm opacity-75">Select <strong>Sui Mainnet</strong> network</span></p>
+                        </div>
+                
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">③</span>
+                            <p>Connect your wallet<br>
+                            <span class="text-sm opacity-75">(We recommend <span class="font-mono">@SuiWallet</span> or <span class="font-mono">@EthosWallet</span>)</span></p>
+                        </div>
+                
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">④</span>
+                            <div>
+                                <p>Paste our address in swap:<br>
+                                <span class="font-mono bg-yellow-100 px-2 py-1 rounded text-sm break-words">
+                                    0xde403e...d50b7d4::ppp::PPP
+                                    <button onclick="copyAddress()" class="ml-2 text-red-500 hover:text-red-700">⎘</button>
+                                </span></p>
+                            </div>
+                        </div>
+                
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">⑤</span>
+                            <p>Select <span class="bg-green-100 px-2 py-1 rounded">💎 SUI</span> as payment<br>
+                            <span class="text-sm opacity-75">(Bonus Panda Power for supporting Sui network!)</span></p>
+                        </div>
+                    </div>
+                
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg border border-green-300 flex items-center">
+                        <div class="bg-green-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white">🐼</span>
+                        </div>
+                        <p class="text-sm">
+                            <strong>Pro Tip:</strong> Using SUI instead of stablecoins gives you<br>
+                            <span class="text-green-600">+10% Panda Luck</span> in our community rewards!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6"><br></div>
+                    
+                <div id="countdown" class="text-2xl text-red-600 font-bold mt-8 text-center">
+                    🔥 Next Token Burn: <span id="timer">00d 00h 00m 00s</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-12 text-white">
+            <div class="bg-red-800/90 p-6 rounded-xl backdrop-blur-sm">
+                <h3 class="text-2xl chinese-font mb-4">財富</h3>
+                <p>Prosperity through community power</p>
+            </div>
+            <div class="bg-yellow-600/90 p-6 rounded-xl backdrop-blur-sm">
+                <h3 class="text-2xl chinese-font mb-4">樂趣</h3>
+                <p>Joyful meme-powered ecosystem</p>
+            </div>
+            <div class="bg-red-800/90 p-6 rounded-xl backdrop-blur-sm">
+                <h3 class="text-2xl chinese-font mb-4">安全</h3>
+                <p>Secure on Sui blockchain</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-12 py-6 bg-black/80 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">
+                Follow us: 
+                <a href="#" class="underline hover:text-red-400">Twitter</a> • 
+                <a href="#" class="underline hover:text-red-400 text-gray-700">Telegram</a>
+            </p>
+            <p class="text-sm opacity-75">
+                © 2025 潘達人 Pandaman Token [PPP]. All Rights Reserved. 福
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Copy Address Functionality
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            navigator.clipboard.writeText(address).then(() => {
+                const feedback = document.getElementById('copyFeedback');
+                feedback.classList.remove('hidden');
+                setTimeout(() => feedback.classList.add('hidden'), 2000);
+            });
+        }
+
+        // 7-Day Countdown Timer for Token Burn (FIXED DATE VERSION)
+        const burnDate = new Date("Feb 28, 2025 12:00:00").getTime(); // 🐼 SET YOUR BURN DATE HERE
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = burnDate - now;
+
+            if(distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "🔥 TOKEN BURN COMPLETED!";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = 
+                `${days}d ${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+        }, 1000);
+    </script>
+</body>
+</html>
