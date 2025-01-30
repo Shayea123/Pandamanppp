@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BeatGame - Pandaman (PPP)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <style>
+    .chinese-font {
+        font-family: 'Ma Shan Zheng', cursive;
+    }
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+    }
+    .floating {
+        animation: float 3s ease-in-out infinite;
+    }
+    .dragon-bg {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><text x="0" y="50" font-family="Ma Shan Zheng" font-size="40" fill="rgba(255,255,255,0.1)">龍</text></svg>');
+        background-repeat: repeat;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center bg-gradient-to-b from-red-900 via-yellow-600 to-red-900 min-h-screen text-white">
+    <!-- HEADER SECTION -->
+    <header class="dragon-bg bg-opacity-20 mx-auto mb-6 py-6 text-white w-full shadow-xl">
+        <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
+            🐼 潘達人 🐼
+            <br>
+            <span class="text-xl md:text-3xl font-sans">Pandaman Token (PPP)</span>
+        </h1>
+    </header>
+
+    <!-- NAVIGATION BAR SECTION -->
+    <nav class="container mx-auto px-4 py-4 flex justify-center space-x-4">
+        <!-- Home Button -->
+        <a href="../index.html"
+        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+        Home
+        </a>
+        <!-- Gallery Button -->
+        <a href="gallery.html"
+        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+        Memes
+        </a>
+        <!-- BeatGame Button -->
+        <a href="beatgame.html"
+        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+        BeatGame
+        </a>
+    </nav>
+
+  <!-- MAIN CONTENT SECTION -->
+  <main class="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
+      <div class="space-y-6">
+          <h1 class="text-6xl chinese-font text-center mb-6">Welcome to Beat The Pandabear Game [Soon...]</h1>
+          <!-- Blog Posts Will Go Here -->
+          <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+              <h2 class="text-4xl font-bold text-red-600 chinese-font">Beat The Pandabear Man</h2>
+              <p class="text-2xl text-gray-700 mt-2">
+                The game is coming soon! Stay tuned and let's beat the bear out of Pandabear market man.
+            </p>
+              <a href="#" class="text-2xl text-red-600 underline hover:text-red-800">And Win Some $PPP...</a>
+          </article>
+          <!-- Add more blog posts as needed -->
+      </div>
+  </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="mx-auto mt-12 py-6 bg-black/80 text-white w-full">
+        <div class="mx-auto px-4 text-center">
+            <p class="mb-4">
+                Follow us: 
+                <a href="https://x.com/shayea_bo" class="underline hover:text-red-400">Twitter</a> • 
+                <a href="#" class="underline hover:text-red-400 text-gray-700">Telegram</a>
+            </p>
+            <p class="text-sm opacity-75">
+                © 2025 潘達人 Pandaman Token [PPP]. All Rights Reserved. 福
+            </p>
+        </div>
+    </footer>
+
+  <!-- SCRIPTS SECTION -->
+  <script>
+      // Add any additional scripts here
+  </script>
+</body>
+</html>

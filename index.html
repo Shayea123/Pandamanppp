@@ -27,6 +27,7 @@
     </style>
 </head>
 <body class="bg-gradient-to-b from-red-900 via-yellow-600 to-red-900 min-h-screen">
+    <!-- HEADER SECTION -->
     <header class="dragon-bg bg-opacity-20 py-6 shadow-xl">
         <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
             🐼 潘達人 🐼
@@ -35,6 +36,26 @@
         </h1>
     </header>
 
+    <!-- NAVIGATION BAR SECTION -->
+    <nav class="container mx-auto px-4 py-4 flex justify-center space-x-4">
+        <!-- Home Button -->
+        <a href="index.html"
+           class="bg-red-600 hover:bg-red-700 text-white text-xl px-6 py-2 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           Home
+        </a>
+        <!-- Gallery Button -->
+        <a href="pages/gallery.html"
+           class="bg-red-600 hover:bg-red-700 text-white text-xl px-6 py-2 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           Memes
+        </a>
+        <!-- BeatGame Button -->
+        <a href="pages/beatgame.html"
+           class="bg-red-600 hover:bg-red-700 text-white text-xl px-6 py-2 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           BeatGame
+        </a>
+    </nav>
+
+    <!-- MAIN CONTENT SECTION -->
     <main class="container mx-auto px-4 py-8">
         <div class="max-w-2xl mx-auto bg-white/90 rounded-2xl shadow-2xl p-6 backdrop-blur-sm">
             <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/f257bc966011ca018b644df8c05c06e7dd87ebc6/Pandaman.png" 
@@ -151,6 +172,7 @@
         </div>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer class="mt-12 py-6 bg-black/80 text-white">
         <div class="container mx-auto px-4 text-center">
             <p class="mb-4">
@@ -164,8 +186,13 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS SECTION -->
     <script>
         // Copy Address Functionality
+        // --------------------------------------------------
+        // This public function (copyAddress) copies the text content
+        // of the contract address element (#contractAddress) to the clipboard.
+        // It also displays a little "Copied!" message for 2 seconds.
         function copyAddress() {
             const address = document.getElementById('contractAddress').innerText;
             navigator.clipboard.writeText(address).then(() => {
@@ -175,7 +202,12 @@
             });
         }
 
-        // 7-Day Countdown Timer for Token Burn (FIXED DATE VERSION)
+        // 7-Day Countdown Timer for Token Burn
+        // --------------------------------------------------
+        // We set a fixed date (Feb 28, 2025) for the burnDate.
+        // Every 1 second, we calculate the remaining time and display
+        // it in the format: "Xd XXh XXm XXs".
+        // If the countdown ends, we show "TOKEN BURN COMPLETED!".
         const burnDate = new Date("Feb 28, 2025 12:00:00").getTime(); // 🐼 SET YOUR BURN DATE HERE
 
         const timer = setInterval(function() {
