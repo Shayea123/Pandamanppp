@@ -21,65 +21,450 @@
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><text x="0" y="50" font-family="Ma Shan Zheng" font-size="40" fill="rgba(255,255,255,0.1)">龍</text></svg>');
         background-repeat: repeat;
     }
-</style>
+  </style>
 </head>
 <body class="flex flex-col items-center bg-gradient-to-b from-red-900 via-yellow-600 to-red-900 min-h-screen text-white">
-        <!-- HEADER SECTION -->
-        <header class="dragon-bg bg-opacity-20 mx-auto mb-6 py-6 text-white w-full shadow-xl">
-            <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
-                🐼 潘達人 🐼
-                <br>
-                <span class="text-xl md:text-3xl font-sans">Pandaman Token (PPP)</span>
-            </h1>
-        </header>
-        
-    <!-- NAVIGATION BAR SECTION -->
-    <nav class="container mx-auto px-4 py-4 flex justify-center space-x-4">
-        <!-- Home Button -->
-        <a href="../index.html"
-        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        Home
-        </a>
-        <!-- Gallery Button -->
-        <a href="gallery.html"
-        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        Memes
-        </a>
-        <!-- BeatGame Button -->
-        <a href="beatgame.html"
-        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        BeatGame
-        </a>
-    </nav>
 
-      <!-- MAIN CONTENT SECTION -->
-  <main class="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
-    <div class="space-y-6">
-        <h1 class="text-6xl chinese-font text-center mb-6">Welcome to Pandaman Memes [Soon...]</h1>
-        <!-- Blog Posts Will Go Here -->
-        <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
-            <h2 class="text-4xl font-bold text-red-600 chinese-font">The Pandaman Memes Gallery</h2>
-            <p class="text-2xl text-gray-700 mt-2">
-                Soon you can share your favorite Pandaman Memes with the world!...
-          </p>
-            <a href="#" class="text-2xl text-red-600 underline hover:text-red-800">And Win Some $PPP...</a>
-        </article>
-        <!-- Add more blog posts as needed -->
-    </div>
-</main>
+  <!-- HEADER SECTION -->
+  <header class="dragon-bg bg-opacity-20 mx-auto mb-6 py-6 text-white w-full shadow-xl">
+      <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
+          🐼 潘達人 🐼
+          <br>
+          <span class="text-xl md:text-3xl font-sans">Pandaman Token (PPP)</span>
+      </h1>
+  </header>
+  
+  <!-- NAVIGATION BAR SECTION -->
+  <nav class="container mx-auto px-4 py-4 flex justify-center space-x-4">
+      <!-- Home Button -->
+      <a href="../index.html"
+         class="bg-red-600 hover:bg-red-700 text-white text-2xl px-8 py-5 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+         Home
+      </a>
+      <!-- Gallery Button -->
+      <a href="gallery.html"
+         class="bg-red-600 hover:bg-red-700 text-white text-2xl px-8 py-5 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+         Memes
+      </a>
+      <!-- BeatGame Button -->
+      <a href="beatgame.html"
+         class="bg-red-600 hover:bg-red-700 text-red-400 text-2xl px-8 py-5 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+         BeatGame
+      </a>
+  </nav>
 
-    <!-- FOOTER SECTION -->
-    <footer class="mx-auto mt-12 py-6 bg-black/80 text-white w-full">
-        <div class="mx-auto px-4 text-center">
-            <p class="mb-4">
-                Follow us: 
-                <a href="https://x.com/shayea_bo" class="underline hover:text-red-400">Twitter</a> • 
-                <a href="#" class="underline hover:text-red-400 text-gray-700">Telegram</a>
-            </p>
-            <p class="text-sm opacity-75">
-                © 2025 潘達人 Pandaman Token [PPP]. All Rights Reserved. 福
-            </p>
+    <!-- MAIN CONTENT SECTION -->
+    <main class="container mx-auto px-4 py-8 flex-grow flex flex-col items-center">
+      <!-- Existing content (Optional) -->
+      <!-- <div class="space-y-6 w-full"> -->
+        <!-- <h1 class="text-6xl chinese-font text-center mb-6">Welcome to Pandaman Memes [Soon...]</h1> -->
+        <!-- <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm text-black"> -->
+            <!-- <h2 class="text-4xl font-bold text-red-600 chinese-font">The Pandaman Memes Gallery</h2> -->
+            <!-- <p class="text-2xl text-gray-700 mt-2"> -->
+                <!-- Soon you can share your favorite Pandaman Memes with the world! -->
+            <!-- </p> -->
+            <!-- <a href="#" class="text-2xl text-red-600 underline hover:text-red-800">And Win Some $PPP...</a> -->
+        <!-- </article> -->
+      <!-- </div> -->
+
+      <!-- LEADERBOARD SECTION -->
+  <section class="mt-8 w-full max-w-4xl bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm text-black">
+    <h2 class="text-4xl text-red-600 font-bold chinese-font mb-4">PPP Meme Leaderboard</h2>
+
+    <!-- Instructions on how to participate -->
+    <p class="text-xl mb-4">
+      To join the leaderboard and win <span class="font-bold text-green-600">$PPP</span> :
+      <br>
+      1) Generate your Pandaman meme using our Meme Maker.<br>
+      2) Download or copy your image meme.<br>
+      3) Post it on <span class="font-bold">X</span> (Twitter) and mention 
+        <span class="text-red-600 font-bold">@shayea_bo</span>.<br>
+      4) Every 24 hours, we'll update this board with the 
+        <span class="font-bold">Sui Wallet Addresses</span> of participants.<br>
+      5) The Addresses with the most tweet views share prizes of 
+        <span class="font-bold text-green-600">1B $PPP</span>!
+    </p>
+
+    <!-- Placeholder Leaderboard Table -->
+    <table class="w-full border-collapse text-center">
+      <thead>
+        <tr class="bg-red-200">
+          <th class="p-3 border-b-2 border-red-400">Rank</th>
+          <th class="p-3 border-b-2 border-red-400">Wallet Address</th>
+          <th class="p-3 border-b-2 border-red-400">Tweet Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example row - fill manually later -->
+        <tr>
+          <td class="p-2 border-b border-gray-300 text-green-600">1</td>
+          <td class="p-2 border-b border-gray-300">---</td>
+          <td class="p-2 border-b border-gray-300">
+            <!-- Could store a link to the tweet or embed in the future -->
+            ---
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 border-b border-gray-300 text-yellow-600">2</td>
+          <td class="p-2 border-b border-gray-300">---</td>
+          <td class="p-2 border-b border-gray-300">---</td>
+        </tr>
+        <!-- Add as many rows as needed -->
+      </tbody>
+    </table>
+  </section>
+
+
+    <!-- NEW MEME MAKER SECTION -->
+    <section class="mt-12 w-full max-w-4xl bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm text-black">
+      <h2 class="text-4xl text-red-600 font-bold chinese-font mb-4">Create Your Pandaman Meme</h2>
+
+      <!-- Panda Body Selection -->
+      <div class="mb-4">
+          <p class="text-xl font-semibold"><span class="text-red-600 font-bold text-xl">*</span> Choose a Panda Body:</p>
+          <div class="flex space-x-4 mt-2">
+            <!-- Sample body images; use your real URLs or paths -->
+            <img 
+                src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodyEating.png" 
+                alt="Body 1" 
+                class="w-32 h-32 border-2 border-black cursor-pointer body-option" 
+                data-body="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodyEating.png"
+            >
+            <img 
+                src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodypointing.png" 
+                alt="Body 2" 
+                class="w-32 h-32 border-2 border-black cursor-pointer body-option" 
+                data-body="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodypointing.png"
+            >
+            <img 
+                src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodystop.png" 
+                alt="Body 3" 
+                class="w-32 h-32 border-2 border-black cursor-pointer body-option" 
+                data-body="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodystop.png"
+            >
+            <img 
+                src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodyHI.png" 
+                alt="Body 3" 
+                class="w-32 h-32 border-2 border-black cursor-pointer body-option" 
+                data-body="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodyHI.png"
+            >
+
+            <img 
+                src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodystandared.png" 
+                alt="Body 3" 
+                class="w-32 h-32 border-2 border-black cursor-pointer body-option" 
+                data-body="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/bodystandared.png"
+            >
+            <!-- Add as many bodies as you need -->
+          </div>
+      </div>
+
+      <!-- Face Selection Thumbnails -->
+      <div class="mb-4">
+        <p class="text-xl font-semibold"><span class="text-red-600 font-bold text-xl">*</span> Choose a Panda Face:</p>
+        <div class="flex space-x-4 mt-2">
+          <!-- Sample face images; Use real URLs or paths -->
+          <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face1.png"
+           alt="Face 1" class="w-16 h-16 border-2 border-black cursor-pointer face-option"
+           data-face="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face1.png">
+
+          <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face2.png"
+           alt="Face 2" class="w-16 h-16 border-2 border-black cursor-pointer face-option"
+           data-face="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face2.png">
+           
+          <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face3.png"
+           alt="Face 2" class="w-16 h-16 border-2 border-black cursor-pointer face-option"
+           data-face="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face3.png">
+
+          <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face4.png"
+           alt="Face 2" class="w-16 h-16 border-2 border-black cursor-pointer face-option"
+           data-face="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face4.png">
+
+          <img src="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face5.png"
+           alt="Face 2" class="w-16 h-16 border-2 border-black cursor-pointer face-option"
+           data-face="https://raw.githubusercontent.com/Shayea123/Pandaman/refs/heads/main/face5.png">
+          <!-- Add as many faces as you want -->
         </div>
-    </footer>
+      </div>
+
+      <!-- Meme Text -->
+      <div class="mb-4">
+        <label for="memeText" class="block text-xl font-semibold mb-2">Add Text:</label>
+        <input
+          id="memeText"
+          type="text"
+          placeholder="Type your Meme text here..."
+          class="text-black p-2 rounded border w-full"
+        />
+      </div>
+      
+    <!-- Meme Text Color -->
+    <div class="mb-4">
+        <label for="memeTextColor" class="block text-xl font-semibold mb-2">
+        Choose Text Color:
+        </label>
+        <input
+        id="memeTextColor"
+        type="color"
+        value="#ff0000"
+        class="w-16 h-10 cursor-pointer border-2 border-black"
+        />
+    </div>
+  
+
+      <!-- Sui Wallet Address (Filename) -->
+      <div class="mb-4">
+        <label for="walletAddress" class="block text-xl font-semibold mb-0">Sui Wallet Address:</label>
+        <span class="text-red-600 font-bold text-xs">Meme without SUI wallet address will not participate on the <span class="text-green-600 font-bold text-xs">Prize</span><br>
+        <input
+          id="walletAddress"
+          type="text"
+          placeholder="Enter your Sui wallet address..."
+          class="text-black p-2 rounded border w-full"
+        />
+      </div>
+
+      <!-- Buttons / Actions -->
+      <div class="flex space-x-4 mb-4">
+        <button id="generateMeme" class="bg-red-600 text-white px-6 py-2 rounded-full shadow hover:bg-red-700">
+          Generate Meme
+        </button>
+        <button id="downloadMeme" class="bg-green-600 text-white px-6 py-2 rounded-full shadow hover:bg-green-700">
+          Download Meme
+        </button>
+      </div>
+    </section>
+
+    <!-- PREVIEW SECTION -->
+    <section class="mt-8 w-full max-w-4xl bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm text-black">
+        <h2 class="text-3xl text-red-600 font-bold chinese-font mb-2">Your Meme Preview</h2>
+        <p class="text-sm text-gray-700 mt-2">
+          <span class="text-green-600">drag</span> the face where you want it to be
+      </p>
+        <!-- Canvas Preview (Hidden by default) -->
+        <canvas id="memeCanvas" class="border border-gray-300 hidden"></canvas>
+    
+        <!-- Meme Preview <img> (also hidden by default) -->
+        <img id="memePreview" alt="Meme Preview" class="mt-4 max-w-full hidden" />
+    </section>
+  
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="mx-auto mt-12 py-6 bg-black/80 text-white w-full">
+    <div class="mx-auto px-4 text-center">
+      <p class="mb-4">
+        Follow us: 
+        <a href="https://x.com/shayea_bo" class="underline hover:text-red-400">Twitter</a> • 
+        <a href="#" class="underline hover:text-red-400 text-gray-700">Telegram</a>
+      </p>
+      <p class="text-sm opacity-75">
+        © 2025 潘達人 Pandaman Token [PPP]. All Rights Reserved. 福
+      </p>
+    </div>
+  </footer>
+<!-- JavaScript Section -->
+<script>
+    // ========= Variables =========
+    let selectedBody = null;
+    let selectedFace = null;
+  
+    // ========= DOM Elements =========
+    const bodyOptions = document.querySelectorAll('.body-option'); 
+    const faceOptions = document.querySelectorAll('.face-option');
+    const generateMemeBtn = document.getElementById('generateMeme');
+    const downloadMemeBtn = document.getElementById('downloadMeme');
+    const memeTextInput = document.getElementById('memeText');
+    const walletAddressInput = document.getElementById('walletAddress');
+    const memeCanvas = document.getElementById('memeCanvas');
+    const memePreview = document.getElementById('memePreview');
+    const memeTextColor = document.getElementById('memeTextColor'); // <-- New color input (if you have it)
+  
+    // ========== NEW face drag variables ==========
+    let faceX = 50;
+    let faceY = 50;
+    let faceWidth = 0;
+    let faceHeight = 0;
+    let faceIsDragging = false;
+    let offsetX = 0; // offset from faceX when user clicks
+    let offsetY = 0;
+    let bodyImg, faceImg; // store images globally so we can re-draw them
+  
+    // ========= Body Selection =========
+    bodyOptions.forEach(bodyImg => {
+      bodyImg.addEventListener('click', () => {
+        selectedBody = bodyImg.getAttribute('data-body');
+        // Optional: Visual highlight
+        bodyOptions.forEach(b => b.classList.remove('ring-4', 'ring-red-600'));
+        bodyImg.classList.add('ring-4', 'ring-red-600');
+        console.log('Selected Panda Body:', selectedBody);
+      });
+    });
+  
+    // ========= Face Selection =========
+    faceOptions.forEach(faceImg => {
+      faceImg.addEventListener('click', () => {
+        selectedFace = faceImg.getAttribute('data-face');
+        // Optional: Visual highlight
+        faceOptions.forEach(f => f.classList.remove('ring-4', 'ring-red-600'));
+        faceImg.classList.add('ring-4', 'ring-red-600');
+        console.log('Selected Panda Face:', selectedFace);
+      });
+    });
+  
+    // ========== Helper: Re-draw the canvas each time we move the face ==========
+    function redrawMeme() {
+      const ctx = memeCanvas.getContext('2d');
+      
+      // Clear the canvas
+      ctx.clearRect(0, 0, memeCanvas.width, memeCanvas.height);
+  
+      // Draw body
+      ctx.drawImage(bodyImg, 0, 0);
+  
+      // Draw face
+      ctx.drawImage(faceImg, faceX, faceY);
+  
+      // Draw text
+      const text = memeTextInput.value || '';
+      // If you have a color input, use it; else default to red
+      const textColor = memeTextColor ? (memeTextColor.value || '#ff0000') : '#ff0000';
+      ctx.font = '40px "Ma Shan Zheng", cursive'; // your Chinese font
+      ctx.fillStyle = textColor;
+      ctx.textAlign = 'center';
+      ctx.fillText( text, memeCanvas.width / 2, memeCanvas.height - 80);
+   
+      // (1) Draw the watermark text (semi-transparent), placed a bit above the bottom
+      ctx.font = '20px "Ma Shan Zheng", cursive';
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.3)'; 
+      ctx.textAlign = 'center';
+      // Example: 40px from bottom
+      ctx.fillText("Pandaman meme coin 🐼$PPP", memeCanvas.width / 2, memeCanvas.height - 40);
+  
+      // (2) Draw the wallet address (non-transparent), slightly further down
+      // so it's "under" (below) the watermark
+      const walletAddress = walletAddressInput.value || '';
+      if (walletAddress) {
+        ctx.font = '15px "Ma Shan Zheng", cursive';
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.3)'; // black
+        ctx.textAlign = 'center';
+        // ~15px from bottom
+        ctx.fillText(walletAddress, memeCanvas.width / 2, memeCanvas.height - 15);
+      }
+  
+      // Update <img> preview => If you want to hide <img>, do NOT remove 'hidden'
+      // This line sets the <img> source, but we won't unhide it below
+      const dataURL = memeCanvas.toDataURL('image/png');
+      memePreview.src = dataURL;
+    }
+  
+    // ========== Generate Meme code ==========
+  
+    generateMemeBtn.addEventListener('click', async () => {
+      if (!selectedBody) {
+        alert('Please select a Panda Body first!');
+        return;
+      }
+      if (!selectedFace) {
+        alert('Please select a Panda Face first!');
+        return;
+      }
+      try {
+        // Load images (store them globally)
+        bodyImg = await loadImage(selectedBody);
+        faceImg = await loadImage(selectedFace);
+  
+        faceWidth = faceImg.width;
+        faceHeight = faceImg.height;
+  
+        // Set canvas size to match body image
+        memeCanvas.width = bodyImg.width;
+        memeCanvas.height = bodyImg.height;
+  
+        // Position face in a default spot (center top, for instance)
+        faceX = (memeCanvas.width / 2) - (faceWidth / 2);
+        faceY = 50;
+  
+        // Initial draw
+        redrawMeme();
+  
+        // Make canvas visible
+        memeCanvas.classList.remove('hidden');
+        
+        // IMPORTANT: Remove or comment out this line to avoid showing the <img>:
+        // memePreview.classList.remove('hidden');
+  
+      } catch (error) {
+        console.error('Error generating meme:', error);
+      }
+    });
+  
+    // ========== Canvas Drag Events ==========
+    // 1) pointerdown
+    memeCanvas.addEventListener('pointerdown', (e) => {
+      const rect = memeCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      // Check if face is clicked
+      if (
+        mouseX >= faceX &&
+        mouseX <= faceX + faceWidth &&
+        mouseY >= faceY &&
+        mouseY <= faceY + faceHeight
+      ) {
+        faceIsDragging = true;
+        offsetX = mouseX - faceX;
+        offsetY = mouseY - faceY;
+        // Capture pointer so we keep receiving pointermove
+        memeCanvas.setPointerCapture(e.pointerId);
+      }
+    });
+
+    // 2) pointermove
+    memeCanvas.addEventListener('pointermove', (e) => {
+      if (!faceIsDragging) return;
+
+      const rect = memeCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      faceX = mouseX - offsetX;
+      faceY = mouseY - offsetY;
+      redrawMeme();
+    });
+
+    // 3) pointerup
+    memeCanvas.addEventListener('pointerup', (e) => {
+      faceIsDragging = false;
+      memeCanvas.releasePointerCapture(e.pointerId);
+    });
+
+  
+    // ========== Download Meme code ==========
+  
+    downloadMemeBtn.addEventListener('click', () => {
+      const walletAddress = walletAddressInput.value || 'PandamanMeme';
+      const dataURL = memeCanvas.toDataURL('image/png');
+  
+      const link = document.createElement('a');
+      link.download = walletAddress + '_meme.png';
+      link.href = dataURL;
+      link.click();
+    });
+  
+    // ========== loadImage function ==========
+  
+    function loadImage(src) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous'; 
+        img.onload = () => resolve(img);
+        img.onerror = err => reject(err);
+        img.src = src;
+      });
+    }
+  </script>
+  
 </body>
 </html>
