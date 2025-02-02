@@ -156,6 +156,44 @@
             </div>
         </div>
 
+<!-- Updated Embed Code -->
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto bg-white/80 rounded-2xl shadow-2xl p-6 backdrop-blur-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-red-600 chinese-font text-center mb-6">
+            📈 Live PPP Chart
+        </h2>
+        <div id="dexscreener-embed" class="rounded-xl overflow-hidden border-2 border-red-500">
+            <iframe src="https://dexscreener.com/sui/0x564ffcb055d063c03d141b4aad74251066d5d0d49055626eaeef6593e9e834a3?embed=1&theme=light&chartTheme=light&chartOnly=0&info=1&trades=0"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Updated Style -->
+<style>
+    #dexscreener-embed {
+        position: relative;
+        width: 100%;
+        height: 500px; /* Increased height for chart + info */
+        background: rgba(255,255,255,0.9);
+        margin: 0 auto;
+    }
+
+    #dexscreener-embed iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 0;
+    }
+
+    @media (max-width: 768px) {
+        #dexscreener-embed {
+            height: 400px; /* Taller mobile view */
+        }
+    }
+</style>
+
         <div class="grid md:grid-cols-3 gap-8 mt-12 text-white">
             <div class="bg-red-800/90 p-6 rounded-xl backdrop-blur-sm">
                 <h3 class="text-2xl chinese-font mb-4">財富</h3>
@@ -171,6 +209,8 @@
             </div>
         </div>
     </main>
+
+
 
     <!-- FOOTER SECTION -->
     <footer class="mt-12 py-6 bg-black/80 text-white">
