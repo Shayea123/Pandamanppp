@@ -31,6 +31,85 @@
             <br>
             <span class="text-xl md:text-3xl font-sans">Pandaman Token (PPP)</span>
         </h1>
+        <style>
+            /* Add improved carousel styles */
+            .video-carousel {
+              position: relative;
+              max-width: 800px;
+              margin: 2rem auto;
+              overflow: hidden;
+              border-radius: 15px;
+              box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            }
+            
+            .carousel-slide {
+              position: absolute;
+              opacity: 0;
+              transition: opacity 0.5s ease;
+              width: 100%;
+              height: auto;
+            }
+            
+            .carousel-slide.active {
+              position: relative;
+              opacity: 1;
+            }
+            
+            .carousel-nav {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background: rgba(255,255,255,0.2);
+              color: white;
+              padding: 1.5rem 1rem;
+              cursor: pointer;
+              border: none;
+              z-index: 10;
+              border-radius: 5px;
+              backdrop-filter: blur(5px);
+              transition: all 0.3s ease;
+            }
+            
+            .carousel-nav:hover {
+              background: rgba(255,255,255,0.3);
+              transform: translateY(-50%) scale(1.1);
+            }
+            
+            .carousel-prev { left: 20px; }
+            .carousel-next { right: 20px; }
+            
+            .lightbox {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.95);
+              z-index: 1000;
+              padding: 2rem;
+            }
+            
+            .lightbox-content {
+              width: 90%;
+              height: 90%;
+              margin: auto;
+              position: relative;
+              border-radius: 15px;
+              overflow: hidden;
+            }
+            
+            .lightbox-close {
+              position: absolute;
+              top: 15px;
+              right: 15px;
+              color: white;
+              font-size: 2.5rem;
+              cursor: pointer;
+              z-index: 1001;
+              text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            }
+          </style>
     </header>
 
     <!-- NAVIGATION -->
@@ -86,6 +165,39 @@
         </div>
     </main>
 
+  <!-- VIDEO CAROUSEL (UPDATED) -->
+  <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm mx-4">
+    <h2 class="text-4xl font-bold text-red-600 chinese-font mb-6">Game Preview Gallery</h2>
+    <div class="video-carousel">
+      <div class="carousel-slide active">
+        <video class="w-full cursor-pointer" muted playsinline loop autoplay
+               poster="placeholder.jpg"
+               onclick="openLightbox('https://raw.githubusercontent.com/Shayea123/Pandaman/main/hHiq4HRROUoowFA0.mp4')">
+          <source src="https://raw.githubusercontent.com/Shayea123/Pandaman/main/hHiq4HRROUoowFA0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="carousel-slide">
+        <video class="w-full cursor-pointer" muted playsinline loop autoplay
+               poster="placeholder.jpg"
+               onclick="openLightbox('https://raw.githubusercontent.com/Shayea123/Pandaman/main/tZ6le7f5u0MKvvmt.mp4')">
+          <source src="https://raw.githubusercontent.com/Shayea123/Pandaman/main/tZ6le7f5u0MKvvmt.mp4" type="video/mp4">
+        </video>
+      </div>
+      <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
+      <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
+    </div>
+  </article>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <video id="lightbox-video" class="w-full h-full" controls autoplay muted loop playsinline>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
     <!-- FOOTER -->
     <footer class="mx-auto mt-12 py-6 bg-black/80 text-white w-full">
         <div class="mx-auto px-4 text-center">
@@ -99,10 +211,69 @@
             </p>
         </div>
     </footer>
-
-    <!-- SCRIPTS -->
     <script>
-        // Additional scripts or custom JS
-    </script>
+        // Improved carousel functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        let carouselInterval;
+    
+        function initializeCarousel() {
+          slides.forEach((slide, index) => {
+            slide.style.display = index === 0 ? 'block' : 'none';
+          });
+          startAutoplay();
+        }
+    
+        function showSlide(n) {
+          slideIndex = (n + slides.length) % slides.length;
+          slides.forEach((slide, index) => {
+            slide.style.display = index === slideIndex ? 'block' : 'none';
+            slide.classList.toggle('active', index === slideIndex);
+          });
+        }
+    
+        function changeSlide(n) {
+          clearInterval(carouselInterval);
+          showSlide(slideIndex + n);
+          startAutoplay();
+        }
+    
+        function startAutoplay() {
+          carouselInterval = setInterval(() => changeSlide(1), 8000);
+        }
+    
+        // Lightbox enhancements
+        function openLightbox(videoSrc) {
+          const lightbox = document.getElementById('lightbox');
+          const video = document.getElementById('lightbox-video');
+          video.src = videoSrc;
+          lightbox.style.display = 'flex';
+          video.play();
+          clearInterval(carouselInterval);
+        }
+    
+        function closeLightbox() {
+          const lightbox = document.getElementById('lightbox');
+          const video = document.getElementById('lightbox-video');
+          video.pause();
+          lightbox.style.display = 'none';
+          startAutoplay();
+        }
+    
+        // Initialize on load
+        window.addEventListener('load', () => {
+          initializeCarousel();
+          // Preload videos
+          const videos = [
+            'https://raw.githubusercontent.com/Shayea123/Pandaman/main/hHiq4HRROUoowFA0.mp4',
+            'https://raw.githubusercontent.com/Shayea123/Pandaman/main/tZ6le7f5u0MKvvmt.mp4'
+          ];
+          videos.forEach(src => {
+            const video = document.createElement('video');
+            video.src = src;
+          });
+        });
+      </script>
+      
 </body>
 </html>
