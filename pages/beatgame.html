@@ -24,7 +24,7 @@
   </style>
 </head>
 <body class="flex flex-col items-center bg-gradient-to-b from-red-900 via-yellow-600 to-red-900 min-h-screen text-white">
-    <!-- HEADER SECTION -->
+    <!-- HEADER -->
     <header class="dragon-bg bg-opacity-20 mx-auto mb-6 py-6 text-white w-full shadow-xl">
         <h1 class="text-4xl md:text-6xl text-white text-center chinese-font">
             🐼 潘達人 🐼
@@ -33,46 +33,64 @@
         </h1>
     </header>
 
-    <!-- NAVIGATION BAR SECTION -->
+    <!-- NAVIGATION -->
     <nav class="container mx-auto px-4 py-4 flex justify-center space-x-4">
-        <!-- Home Button -->
         <a href="../index.html"
-        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        Home
+           class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           Home
         </a>
-        <!-- Gallery Button -->
         <a href="gallery.html"
-        class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        Memes
+           class="bg-red-600 hover:bg-red-700 text-white text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           Memes
         </a>
-        <!-- BeatGame Button -->
         <a href="beatgame.html"
-        class="bg-red-600 hover:bg-red-700 text-red-400 text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
-        BeatGame
+           class="bg-red-600 hover:bg-red-700 text-red-400 text-5xl px-10 py-6 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg chinese-font">
+           BeatGame
         </a>
     </nav>
 
-  <!-- MAIN CONTENT SECTION -->
-  <main class="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
-      <div class="space-y-6">
-          <h1 class="text-6xl chinese-font text-center mb-6">Welcome to Beat The Pandabear Game [Soon...]</h1>
-          <!-- Blog Posts Will Go Here -->
-          <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
-              <h2 class="text-4xl font-bold text-red-600 chinese-font">Beat The Pandabear Man</h2>
-              <p class="text-2xl text-gray-700 mt-2">
-                The game is coming soon! Stay tuned and let's beat the bear out of Pandabear market man.
-            </p>
-              <a href="#" class="text-2xl text-red-600 underline hover:text-red-800">And Win Some $PPP...</a>
-          </article>
-          <!-- Add more blog posts as needed -->
-      </div>
-  </main>
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
+        <div class="space-y-6">
+            <h1 class="text-6xl chinese-font text-center mb-6">Welcome to Beat The Pandabear Game [Soon...]</h1>
 
-    <!-- FOOTER SECTION -->
+            <!-- INTRO ARTICLE -->
+            <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+                <h2 class="text-4xl font-bold text-red-600 chinese-font">Beat The Pandabear Man</h2>
+                <p class="text-2xl text-gray-700 mt-2">
+                  The game is coming soon! Stay tuned and let's beat the bear out of Pandabear market man.
+                </p>
+                <a href="#" class="text-2xl text-red-600 underline hover:text-red-800">And Win Some $PPP...</a>
+            </article>
+
+            <!-- SNEAK PEEK ARTICLE -->
+            <article class="bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+                <h2 class="text-4xl font-bold text-red-600 chinese-font">Sneak Peek (Concept Preview)</h2>
+                <p class="text-2xl text-gray-700 mt-2">
+                    Below is a short preview of our upcoming game. Please note:
+                    this is <strong>not</strong> the final version and is subject to change. Whitelisted
+                    members will be able to test a beta build soon before the official launch!
+                </p>
+                
+                <!-- Embed the MP4 via the RAW GitHub link -->
+                <video
+                    class="w-full h-auto mt-4 rounded-lg shadow-md"
+                    src="https://raw.githubusercontent.com/Shayea123/Pandaman/main/hHiq4HRROUoowFA0.mp4"
+                    controls
+                    muted
+                    playsinline
+                    poster="placeholder-image.jpg">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
     <footer class="mx-auto mt-12 py-6 bg-black/80 text-white w-full">
         <div class="mx-auto px-4 text-center">
             <p class="mb-4">
-                Follow us: 
+                Follow us:
                 <a href="https://x.com/PandamanPPP" class="underline hover:text-red-400">Twitter</a> • 
                 <a href="#" class="underline hover:text-red-400 text-gray-700">Telegram</a>
             </p>
@@ -82,9 +100,9 @@
         </div>
     </footer>
 
-  <!-- SCRIPTS SECTION -->
-  <script>
-      // Add any additional scripts here
-  </script>
+    <!-- SCRIPTS -->
+    <script>
+        // Additional scripts or custom JS
+    </script>
 </body>
 </html>
